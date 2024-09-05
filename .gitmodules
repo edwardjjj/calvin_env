@@ -1,3 +1,6 @@
 [submodule "tacto"]
 	path = tacto
 	url = https://github.com/edwardjjj/tacto.git
+[submodule "urdfpy"]
+	path = urdfpy
+	url = https://github.com/edwardjjj/urdfpy.git
