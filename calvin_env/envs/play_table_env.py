@@ -18,7 +18,7 @@ import pybullet as p
 import pybullet_utils.bullet_client as bc
 
 import calvin_env
-from calvin_env.utils.utils import FpsController, get_git_commit_hash
+from calvin_env.utils.utils import FpsController
 
 # A logger for this file
 log = logging.getLogger(__name__)
@@ -69,7 +69,7 @@ class PlayTableSimEnv(gym.Env):
             )
             for name in cameras
         ]
-        log.info(f"Using calvin_env with commit {get_git_commit_hash(Path(calvin_env.__file__))}.")
+        log.info(f"Using calvin_env with commit.")
 
     def __del__(self):
         self.close()
